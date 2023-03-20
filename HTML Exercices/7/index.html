@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungLda - VMO</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <span style="font-weight:bolder;">Feedback Form</span>
+    </div>
+    <hr>
+    <div class="content">
+        <div>
+            <label class="title">Name :</label>
+            <input type="text"/>
+        </div>
+        <div>
+            <label class="title">Sex :</label>
+            <input type="radio" id="M" name="M" value="male">
+            <label for="M">M</label>
+            <input type="radio" id="F" name="F" value="male">
+            <label for="F">F</label>
+        </div>
+        <div class="mid">
+            <label class="title">Comments :</label>
+            <textarea class="text-area" rows="5"></textarea>
+        </div>
+        <button class="submit">Submit</button>
+        <button class="reset">Reset</button>
+    </div>
+</body>
+</html>

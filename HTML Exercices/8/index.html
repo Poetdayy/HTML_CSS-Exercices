@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungLda - VMO</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<style>
+table, th, td {
+    border: 1px solid black;
+  }
+
+th, td {
+  width: 33.3%;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+</style>
+<body>
+    <div class="content">
+        <span style="font-weight: bolder;">Simple form with name and age</span>
+        <div>
+            <div>
+                <label for="M">Name:</label>
+                <input type="text" id="M" name="M">
+            </div>
+            <div style="margin-top: 5px;">
+                <label for="F">Age:</label>
+                <input type="text" id="F" name="F">
+                <button>Add</button>
+            </div>
+        </div>
+        <div class="mid" style="margin-top: 20px">
+            <span style="font-weight: bolder;">Current data in the system...</span>
+            <table>
+                <tr>
+                  <th></th>
+                  <th>Name</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td><button><a href=""">Delete</a></button></td>
+                  <td>John</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                    <td><button><a href=""">Delete</a></button></td>
+                    <td>Mike</td>
+                  <td>55</td>
+                </tr>
+                <td><button><a href=""">Delete</a></button></td>
+                <td>Albert</td>
+                  <td>39</td>
+                </tr>
+              </table>
+        </div>
+        <div style="margin-top: 20px;">
+            <button class="submit"><a href="">Click here</a></button>
+            <span>to create a Table and some data using Javascript</span>
+        </div>
+    </div>
+</body>
+</html>

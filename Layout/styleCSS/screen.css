@@ -1,0 +1,174 @@
+
+ @media screen {
+    /* force vertical scrollbar */
+    body {
+      overflow-y: scroll;
+    }
+  
+    /* Layout Module Configuration */
+    .layout-wrapper {
+      max-width: 80em;
+      margin: 0 auto;
+    }
+  
+    .layout-wbox {
+      padding: 1.5em;
+    }
+  
+    /* fallback for missing media queries support*/
+    body > header, body > nav, body > main, body > footer {
+      min-width: 760px;
+    }
+  
+    /* Basic Element Styling */
+    header {
+      background: #444;
+      color: #ccc;
+    }
+    header h1 {
+      background: transparent;
+      color: #fff;
+    }
+    header .layout-wbox {
+      padding: 1.5em;
+    }
+  
+    nav {
+      background: #222222;
+    }
+  
+    main .info {
+      margin-bottom: 1.5em;
+    }
+    main aside .layout-gbox-right {
+      border-left: 1px #ddd solid;
+    }
+  
+    footer {
+      background: #eee;
+      color: #444;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer .layout-wbox {
+      padding: 1.5em;
+    }
+  
+    .layout-gbox {
+      padding: 0 1.5em;
+    }
+  
+    .layout-gbox-left {
+      padding: 0 1.5em 0 0;
+    }
+  
+    .layout-gbox-right {
+      padding: 0 0 0 1.5em;
+    }
+  
+    /* skip links styling */
+    .layout-skiplinks a.layout-skip:focus,
+    .layout-skiplinks a.layout-skip:active {
+      color: #fff;
+      background: #333;
+      border-bottom: 1px #000 solid;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  /* reset fallback values in modern browsers */
+  @media screen and (min-width: 0px) {
+    body > header, body > nav, body > main, body > footer {
+      min-width: 0;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
+    .linearize-level-1, .linearize-level-1 > [class*="layout-c"], .linearize-level-1 > [class*="layout-g"] {
+      /* linearization for grids and columns module */
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      width: auto !important;
+    }
+    .linearize-level-1 > [class*="layout-c"] > [class*="layout-cbox"], .linearize-level-1 > [class*="layout-g"] > [class*="layout-gbox"] {
+      /* reset defined gutter values */
+      margin: 0;
+      padding: 0;
+      /* optional for containing floats */
+      overflow: hidden;
+    }
+  
+    .secondary {
+      border-top: 1px #888 solid;
+      margin-top: 1.5em !important;
+      padding-top: 1.5em !important;
+    }
+  
+    main aside .layout-gbox-right {
+      border: 0 none;
+    }
+  
+    .layout-searchform {
+      display: block;
+      float: none;
+      width: auto;
+      text-align: right;
+    }
+  
+    .layout-searchform input[type="search"] {
+      width: 14%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
+    .linearize-level-2, .linearize-level-2 > [class*="layout-c"], .linearize-level-2 > [class*="layout-g"] {
+      /* linearization for grids and columns module */
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      width: auto !important;
+    }
+    .linearize-level-2 > [class*="layout-c"] > [class*="layout-cbox"], .linearize-level-2 > [class*="layout-g"] > [class*="layout-gbox"] {
+      /* reset defined gutter values */
+      margin: 0;
+      padding: 0;
+      /* optional for containing floats */
+      overflow: hidden;
+    }
+  
+    header .layout-wbox {
+      padding: 0.75em 10px;
+    }
+    header h1 {
+      font-size: 1.5em;
+      line-height: 1em;
+      margin: 0;
+    }
+  
+    footer .layout-wbox,
+    .layout-wbox,
+    .layout-searchform,
+    nav .layout-hlist ul {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .layout-searchform,
+    nav .layout-hlist ul,
+    nav .layout-hlist li {
+      display: block;
+      float: none;
+      width: auto;
+      text-align: left;
+    }
+  
+    .layout-searchform input[type="search"] {
+      width: 75%;
+    }
+  }
+  

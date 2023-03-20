@@ -1,0 +1,31 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;   
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 122px;
+    background-color: red;
+    color: white;
+    padding-top: 20px
+}
+
+#header .header_nav ul {
+    list-style: none;
+    background-color: blue;
+    display: flex;
+}
+
+#header ul > li > a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}

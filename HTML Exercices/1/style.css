@@ -1,0 +1,7 @@
+.container {
+    width: 550px;
+    border: solid;
+    border-width: 1px 0;
+    border-color: #a3a3a3;
+    text-align: justify;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.input_group > label {
+    display: block;
+}
+
+.input_checkbox_group {
+    display: flex;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+        <div class="input_group">
+            <label for="fullname">Full name*</label>
+            <input type="text" placeholder="FirstName LastName" id="fullname" name="fullname"></input>
+        </div>
+        <div class="input_group">
+            <label for="email">Email address</label>
+            <input type="email" placeholder="EMAIL_ADDRESS"></input>
+        </div>
+        <div class="input_group">
+            <label for="fullname">Select Tour Package*</label>
+            <select>
+                <option>Goa</option>
+            </select>
+        </div>
+        <div class="input_group">
+            <label for="fullname">Arrival date**</label>
+            <input type="date" placeholder="m/d/y"></input>
+        </div>
+        <div class="input_group">
+            <label for="fullname">Number of persons*</label>
+            <input type="text" placeholder="UNKNOWN_TYPE"></input>
+        </div>
+        <div class="input_group">
+            <label for="fullname">What would you want to avail?*</label>
+            <div class="input_checkbox">
+                <label for="fullname">Boarding</label>
+                <input type="checkbox" placeholder="FirstName LastName"></input>
+            </div>
+            <div class="input_checkbox">
+                <label for="fullname">Fooding</label>
+                <input type="checkbox" placeholder="FirstName LastName"></input>
+            </div>
+            <div class="input_checkbox">
+                <label for="fullname">Sight seeing</label>
+                <input type="checkbox" placeholder="FirstName LastName"></input>
+            </div>
+        </div>
+        <div class="input_group">
+            <label for="fullname">Discount Coupon code*</label>
+            <input type="text" placeholder="UNKNOWN_TYPE"></input>
+        </div>
+        <label for="fullname">What would you want to avail?*</label>
+        <div class="input_group input_checkbox_group">
+            <div class="input_radio">
+                <input type="radio" placeholder="FirstName LastName" checked></input>
+                <label for="fullname">I agree</label>
+            </div>
+            <div class="input_checkbox">
+                <input type="radio" placeholder="FirstName LastName"></input>
+                <label for="fullname">I disagree</label>
+            </div>
+        </div>
+        <button>Complete reservation</button>
+    </div>
+</body>
+</html>

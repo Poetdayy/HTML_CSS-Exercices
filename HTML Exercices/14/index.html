@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungLda - VMO</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<style>
+.content_item_radio {
+    display: flex;
+}
+
+.content_item {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
+</style>
+<body>   
+    <div class="container">
+        <div class="content_item">
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="content_item content_item_radio">
+            <label for="payment">Payment Options:</label>
+            <input type="radio" id="credit_card" name="credit_card">
+            <label for="credit_card">Credit Card</label>
+            <input type="radio" id="debit_card" name="debit_card">
+            <label for="debit_card">Debit Card</label>
+            <input type="radio" id="paypal" name="paypal">
+            <label for="paypal">Paypal</label>
+        </div>
+        <div class="content_item">
+            <label for="hear">Where did your hear about us?</label>
+            <select>
+                <option>None</option>
+            </select>
+        </div>
+        <div class="content_item">
+            <label>Terms and Conditions</label>
+            <input type="checkbox" id="paypal" name="paypal">
+        </div>
+        <div class="content_item">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>

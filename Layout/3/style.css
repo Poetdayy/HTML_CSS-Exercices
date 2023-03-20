@@ -1,0 +1,13 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#Container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}

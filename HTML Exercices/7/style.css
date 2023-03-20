@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.content .title {
+    display: inline-block;
+    width: 90px;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    border: solid 1px blue;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.submit {
+    width: 60px;
+    margin-top: 10px
+}
+
+.reset {
+    margin-left: 25px;
+}

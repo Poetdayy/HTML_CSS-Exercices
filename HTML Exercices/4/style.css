@@ -1,0 +1,17 @@
+.container_content {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+th, td {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+span {
+    margin-left: 200px;
+}

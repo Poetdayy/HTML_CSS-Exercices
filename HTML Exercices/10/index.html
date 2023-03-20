@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungLda - VMO</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<style>
+.content_item {
+    margin-bottom: 10px;
+}
+
+input, button {
+    border: 1px solid;
+    border-color: #a3a3a3;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+</style>
+<body>   
+    <div class="container">
+        <h1>HTML Form</h1>
+        <div class="content">
+            <div class="content_item">
+                <label for="Firstname">Firstname:</label>
+                <input type="text" id="Firstname" name="Firstname">
+            </div>
+            <div class="content_item">
+                <label for="Lastname">Lastname:</label>
+                <input type="text" id="Lastname" name="Lastname">
+            </div>
+            <div class="content_item">
+                <label for="E-mail">E-mail:</label>
+                <input type="text" id="E-mail" name="E-mail">
+            </div>
+            <div class="content_item">
+                <div class="radio_item">
+                    <input type="radio" id="male_radio" name="male_radio">
+                    <label for="male_radio">Male</label>
+                </div>
+                <div class="radio_item">
+                    <input type="radio" id="female_radio" name="female_radio">
+                    <label for="female_radio">Female</label>
+                </div>
+            </div>
+            <div class="content_item">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
